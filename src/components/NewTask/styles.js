@@ -18,6 +18,7 @@ export const InputNewTask = styled.input`
     font-weight: bold;
     padding-left: 10px;
     color: #5f5f5f;
+    border-radius: 50px;
 `
 
 export const ButtonNewTask = styled.button`
