@@ -12,14 +12,12 @@ export default function TaskListComponent(props) {
             {props.tasks && props.tasks.map((task) => (
                 <ListItem key={task.id}>
                     <CompletedContainer 
-                        onClick={() => props.toggleTask(task.id)}
-                        onTouchStart={() => props.toggleTask(task.id)}>
+                        onClick={() => props.toggleTask(task.id)}>
                         <ItemText completed={task.completed}>{task.text}</ItemText>
                         <Checkbox completed={task.completed} />
                     </CompletedContainer>
                     <Trash 
-                        onClick={() => props.deleteTask(task.id)}
-                        onTouchStart={() => props.deleteTask(task.id)}>
+                        onClick={() => props.deleteTask(task.id)}>
                         <FaRegTrashAlt color="#b617ea" /> 
                     </Trash>
                 </ListItem>
