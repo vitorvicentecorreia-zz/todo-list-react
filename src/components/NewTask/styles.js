@@ -9,9 +9,9 @@ export const Container = styled.div`
 `;
 
 export const InputNewTask = styled.input`
-    border: 1px solid #cccccc;
+    border: 1px solid #e0e0e0;
     width: 70%;
-    height: 40px;
+    height: 50px;
     margin-right: 3%;
     outline: none;
     font-size: 17px;

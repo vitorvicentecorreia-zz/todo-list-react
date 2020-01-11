@@ -5,6 +5,11 @@ export const TaskList = styled.ul`
     height: 70%; 
     overflow-y: auto;
 `
+
+export const CompletedContainer = styled.div`
+    width: 100%;
+    display: flex;
+`
 export const ListItem = styled.li`
     margin: 10px auto;
     width: 80%;

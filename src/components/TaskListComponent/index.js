@@ -1,7 +1,7 @@
 import React from 'react';
 import { FaRegTrashAlt } from "react-icons/fa";
 
-import { TaskList, ListItem, ItemText, Trash } from './styles';
+import { TaskList, ListItem, CompletedContainer, ItemText, Trash } from './styles';
 import Checkbox from '../Checkbox'
 
 
@@ -11,9 +11,11 @@ export default function TaskListComponent(props) {
         <TaskList>
             {props.tasks && props.tasks.map((task) => (
                 <ListItem key={task.id}>
-                    <ItemText completed={true}>{task.text}</ItemText>
-                    <Checkbox />
-                    <Trash>
+                    <CompletedContainer onClick={() => props.toggleTask(task.id)}>
+                        <ItemText completed={task.completed}>{task.text}</ItemText>
+                        <Checkbox completed={task.completed} />
+                    </CompletedContainer>
+                    <Trash onClick={() => props.deleteTask(task.id)}>
                         <FaRegTrashAlt color="#b617ea" /> 
                     </Trash>
                 </ListItem>
