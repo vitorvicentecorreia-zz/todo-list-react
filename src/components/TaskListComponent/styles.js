@@ -13,7 +13,7 @@ export const CompletedContainer = styled.div`
 export const ListItem = styled.li`
     margin: 10px auto;
     width: 80%;
-    height: 40px;
+    min-height: 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -24,6 +24,7 @@ export const ItemText = styled.div`
     width: 90%;
     display: flex;
     align-items: center;
+    word-break: break-word;
 
     ${props => props.completed && `
         color: #d4d4d4;
