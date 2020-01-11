@@ -17,7 +17,9 @@ export default function NewTask(props) {
             onChange={(event) => setInputText(event.target.value)} 
             placeholder="Digite uma tarefa ..."
             onKeyDown={(event) => event.key === 'Enter' && newTask() } />
-          <ButtonNewTask onClick={() => newTask()}>+</ButtonNewTask>
+          <ButtonNewTask 
+            onClick={() => newTask()}
+            onTouchStart={() => newTask()}>+</ButtonNewTask>
       </Container>
     );
 }

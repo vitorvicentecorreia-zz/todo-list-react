@@ -15,7 +15,7 @@ export default function TaskList() {
 
 	return (
 		<Container>
-			<Title className="list-title">To do List</Title>
+			<Title className="list-title">Lista de tarefas</Title>
 			<TaskListComponent 
 				toggleTask={(id) => dispatch(toggleTask(id))} 
 				deleteTask={(id) => dispatch(deleteTask(id))}
