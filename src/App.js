@@ -9,7 +9,6 @@ import reset from 'styled-reset'
 
 //Pages
 import TaskList from './pages/TaskList'
-import NewTask from './pages/NewTask'
 
 const GlobalStyle = createGlobalStyle`
 	@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
@@ -26,7 +25,6 @@ function App() {
 			<GlobalStyle />
 			<Switch>
 				<Route exact path="/" component={TaskList} />
-				<Route path="/new-task" component={NewTask} />
 			</Switch>
 		</Router>
 	);

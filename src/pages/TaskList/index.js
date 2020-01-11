@@ -1,7 +1,8 @@
 import React from 'react';
 
-import { Container, Title, ButtonNewTask } from './styles';
+import { Container, Title } from './styles';
 import TaskListComponent from '../../components/TaskListComponent'
+import NewTask from '../../components/NewTask'
 
 export default function TaskList() {
 
@@ -15,7 +16,7 @@ export default function TaskList() {
 		<Container>
 			<Title className="list-title">To do List</Title>
 			<TaskListComponent tasks={tasks} />
-			<ButtonNewTask>+</ButtonNewTask>
+			<NewTask />
 		</Container>
 	);
 }

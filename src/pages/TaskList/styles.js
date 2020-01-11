@@ -15,17 +15,3 @@ export const Title = styled.h1`
     font-weight: bold;
 `
 
-export const ButtonNewTask = styled.button`
-    width: 55px;
-    height: 55px;
-    border: none;
-    border-radius: 50%;
-    color: white;
-    background-color: #b617ea;
-    font-size: 40px;
-    position: fixed;
-    bottom: 25px;
-    right: 25px;
-    outline: none;
-    cursor: pointer;
-`
