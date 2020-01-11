@@ -1,26 +1,35 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import {
+	BrowserRouter as Router,
+	Switch,
+	Route
+} from "react-router-dom";
+import { createGlobalStyle } from 'styled-components'
+import reset from 'styled-reset'
+
+//Pages
+import TaskList from './pages/TaskList'
+import NewTask from './pages/NewTask'
+
+const GlobalStyle = createGlobalStyle`
+	@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+	${reset}
+	body{
+		font-family: 'Montserrat', sans-serif;
+	}
+  /* other styles */
+`
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<Router>
+			<GlobalStyle />
+			<Switch>
+				<Route exact path="/" component={TaskList} />
+				<Route path="/new-task" component={NewTask} />
+			</Switch>
+		</Router>
+	);
 }
 
 export default App;

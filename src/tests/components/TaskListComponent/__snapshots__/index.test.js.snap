@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Comparar snapshots do componente TaskListComponent 1`] = `
+<styled.ul>
+  <styled.li
+    key="1"
+  >
+    task 1
+  </styled.li>
+  <styled.li
+    key="2"
+  >
+    task 2
+  </styled.li>
+</styled.ul>
+`;
+
+exports[`Testar renderização do componente de lista de tarefas 1`] = `
+<styled.ul>
+  <styled.li
+    key="1"
+  >
+    task 1
+  </styled.li>
+  <styled.li
+    key="2"
+  >
+    task 2
+  </styled.li>
+</styled.ul>
+`;
